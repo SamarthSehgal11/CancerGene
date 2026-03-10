@@ -1,18 +1,17 @@
 # Node.js
-cancer-app/frontend/node_modules/
-cancer-app/frontend/build/
-cancer-app/frontend/.env
-cancer-app/frontend/.eslintcache
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.eslintcache
 
 # Python
+backend/__pycache__/
+backend/venv/
+backend/env/
+backend/.env
 __pycache__/
 *.py[cod]
 *$py.class
-.env
-.venv
-env/
-venv/
-ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
@@ -20,3 +19,7 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Data
+data/*.csv
+data/*.xlsx
