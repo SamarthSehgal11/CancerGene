@@ -1,0 +1,28 @@
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-badge {
+    background: #EFF6FF;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    color: #1D4ED8;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.tech-badge:hover {
+    background: #DBEAFE;
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}

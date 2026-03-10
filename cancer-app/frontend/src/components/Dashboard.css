@@ -1,0 +1,361 @@
+.dashboard-section {
+    padding: 100px 0;
+    background: var(--bg-primary);
+}
+
+.cv-badge {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cv-badge span {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.cv-badge strong {
+    color: var(--accent-primary);
+    font-weight: 700;
+}
+
+/* Model Summary Cards (Below Chart) */
+.model-summary-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.model-summary-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.model-summary-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--shadow);
+    border-color: var(--accent-primary);
+}
+
+.model-summary-card h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.summary-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.s-badge.f1 {
+    background: #E0F2FE;
+    color: #0EA5E9;
+}
+
+.s-badge.auc {
+    background: #DCFCE7;
+    color: #10B981;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.status-tag.best {
+    background: #FEF3C7;
+    color: #D97706;
+}
+
+.status-tag.strong {
+    background: #ECFDF5;
+    color: #059669;
+}
+
+.status-tag.good {
+    background: #EFF6FF;
+    color: #1D4ED8;
+}
+
+.status-tag.moderate {
+    background: #FFF7ED;
+    color: #C2410C;
+}
+
+.status-tag.weak {
+    background: #FEF2F2;
+    color: #B91C1C;
+}
+
+/* Chart Area */
+.chart-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 12px 28px;
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+    background: var(--accent-primary);
+    color: #FFFFFF;
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+.chart-container {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 50px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 40px var(--shadow);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.chart-wrapper {
+    height: 480px;
+    background: #F8FAFC;
+    padding: 30px;
+    border-radius: 16px;
+    position: relative;
+    border: 1px solid #E2E8F0;
+}
+
+.chart-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* SVM Confusion Matrix - Rebuilt for Precision Alignment */
+.confusion-matrix-card {
+    background: #FFFFFF;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.confusion-matrix-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.true-label-axis {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #64748B;
+    font-weight: 700;
+    align-self: center;
+}
+
+.matrix-grid-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: 60px repeat(5, 72px);
+    grid-template-rows: 40px repeat(5, 72px);
+    gap: 0;
+}
+
+.grid-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-label.row {
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+
+.matrix-cell {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: default;
+    transition: transform 0.2s ease;
+}
+
+.matrix-cell:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.matrix-cell.diagonal {
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.predicted-label-axis {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #64748B;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 700;
+    padding-left: 60px;
+    /* Offset for the row labels */
+}
+
+.color-scale-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 360px;
+    /* Matches 5 * 72px */
+    align-self: center;
+    margin-top: 40px;
+    /* Offset for the header row */
+}
+
+.scale-bar {
+    width: 16px;
+    height: 100%;
+    background: linear-gradient(to top, #DBEAFE, #0EA5E9);
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.scale-val {
+    font-size: 12px;
+    color: #64748B;
+    font-weight: 600;
+}
+
+.caption {
+    margin-top: 24px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    opacity: 0.8;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@media (max-width: 900px) {
+    .model-summary-row {
+        gap: 12px;
+    }
+
+    .model-summary-card {
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heatmap-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .heatmap-y-axis {
+        display: none;
+    }
+
+    .heatmap-scale-container {
+        display: none;
+    }
+}
+
+.svm-badge {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    background: #FEF3C7;
+    color: #D97706;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+    border: 1px solid rgba(217, 119, 6, 0.2);
+    z-index: 10;
+}
+
+.star-icon {
+    margin-top: -2px;
+}

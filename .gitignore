@@ -1,0 +1,22 @@
+# Node.js
+cancer-app/frontend/node_modules/
+cancer-app/frontend/build/
+cancer-app/frontend/.env
+cancer-app/frontend/.eslintcache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

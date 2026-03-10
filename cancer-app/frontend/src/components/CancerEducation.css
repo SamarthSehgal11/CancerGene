@@ -1,0 +1,163 @@
+.cancer-edu-section {
+    padding: 100px 0;
+    background: var(--bg-primary);
+}
+
+.accordion-container {
+    max-width: 900px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordion-item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.accordion-header {
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.type-code {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-right: 20px;
+    border-right: 2px solid var(--border);
+}
+
+.type-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #FFFFFF;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1200px;
+    padding: 0 30px 40px;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.edu-block h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.edu-block p,
+.edu-block li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.edu-block ul {
+    padding-left: 18px;
+}
+
+.diagnosed-block {
+    grid-column: span 2;
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.diagnosed-block h4 {
+    color: var(--text-primary);
+}
+
+.tip-block {
+    grid-column: span 2;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-primary);
+    padding: 15px 20px;
+    background: rgba(14, 165, 233, 0.05);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.icon-chevron {
+    transition: transform 0.3s ease;
+    color: var(--text-muted);
+}
+
+.accordion-item.active .icon-chevron {
+    transform: rotate(180deg);
+}
+
+.medical-disclaimer-box {
+    max-width: 900px;
+    margin: 80px auto 0;
+    padding: 40px;
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.disclaimer-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #dc2626;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.disclaimer-text {
+    color: #991b1b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .diagnosed-block {
+        grid-column: span 1;
+    }
+}
