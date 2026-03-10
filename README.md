@@ -91,7 +91,7 @@ Place your trained .pkl model files inside the `backend/models/` directory befor
 | Validation | 10-Fold Stratified Cross Validation |
 
 ## Developers
-This project was developed by Samarth Sehgal and Yash Mahala as part of a machine learning research project focused on computational genomics and cancer diagnostics.
+This project was developed by Samarth Sehgal as part of a machine learning research project focused on computational genomics and cancer diagnostics.
 
 ## Disclaimer
 > This project is intended strictly for academic and research purposes. It is not a clinical diagnostic tool and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical decisions.
